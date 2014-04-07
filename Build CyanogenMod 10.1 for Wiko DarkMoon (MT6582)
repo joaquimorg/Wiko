@@ -1,0 +1,48 @@
+Build CyanogenMod 10.1 for Wiko DarkMoon (MT6582)
+
+
+1 - 
+
+Init REPO
+$repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
+
+$repo sync
+
+
+2 - 
+
+Copiar o conteudo da Mediatek para dentro da pasta do cm-10.1
+
+
+3 - 
+Configuração e alterações para compilar o Kernel e Android via scripts da Mediatek
+
+- mediatek/build/tools/checkEnv.py
+	alterar o “--v” para “-v” na validação do GCC
+
+- mediatek/build/mbldenv.sh
+	alterar os caminhos na path e retirar as paths do JAVA
+
+- mediatek/custom/common/modem/mt6582_s8513_hspa_gemini/modem_feature_mt6582_s8513_hspa_gemini.mak
+Copiar modem_1_wg_n.img para a pasta
+
+ - falta mediatek/external/seclib
+ - falta mediatek/dct
+
+ - falta mediatek/preloader
+ - copiar mediatek/preloader/bin/preloader_wiko.bin
+
+4 -
+Criar link para mediatek\build\makeMtk
+	$ln -s mediatek/build/makeMtk mk
+
+5 -
+Build
+	$./mk listp - ver os dispositivos
+
+	$./mk -t wiko r
+
+
+
+
+
