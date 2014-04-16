@@ -40,7 +40,28 @@ xlog-ale.o:
          
          
          
-        
+###########################################
+# Declare our main module
+###########################################
+include $(CLEAR_VARS)
+LOCAL_MODULE := libjnimain
+LOCAL_SRC_FILES := \
+main.c
+
+# for logging
+LOCAL_LDLIBS += -llog
+
+# include the prebuilt libraries
+LOCAL_SHARED_LIBRARIES := \
+A-prebuilt \
+B-prebuilt
+
+#This will include all Android.mk files in sub-directories
+#of the current build file's path.
+include $(call all-subdir-makefiles)
+include $(BUILD_SHARED_LIBRARY)
+
+//////////////////////////////////////////////        
 
 
 LOCAL_PATH:= $(call my-dir)
@@ -55,3 +76,8 @@ include $(BUILD_PREBUILT)
 
 PRODUCT_PACKAGES += \
      libUMP \
+     
+     
+     
+     
+     
