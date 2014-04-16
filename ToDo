@@ -1,12 +1,12 @@
-TODO
-------------
+ > TODO <
+---------------------------------------------------------------------------------------------------------------------
 
 .build da "liblog" com a informação para o "__xlog_buf_printf" as libs da mediatek estão a procura disto...
 
 https://github.com/joaquimorg/mt6577_FULL_AOSP_SOURCE/blob/master/system/core/include/cutils/xlog.h
 
 
----------
+--------------------------------------------------------------------------------------------------------------------
 debug info :
 
 xlog-ale.o:
