@@ -4,3 +4,35 @@ TODO
 .tentar fazer o build da "liblog" com a informação para o "__xlog_buf_printf" as libs da mediatek estão a procura disto...
 
 https://github.com/dragonpt/mt6577_FULL_AOSP_SOURCE/blob/master/system/core/include/cutils/xlog.h
+
+
+---------
+debug info :
+
+xlog-ale.o:
+00000000 r .LC0
+00000001 r .LC1
+00000005 r .LC2
+0000000a r .LC3
+0000000d r .LC4
+00000011 r .LC5
+00000015 r .LC6
+0000001a r .LC7
+00000020 r .LC8
+00000024 r .LC9
+         U _GLOBAL_OFFSET_TABLE_        /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:281
+         U __aeabi_unwind_cpp_pr0
+         U __aeabi_unwind_cpp_pr1
+         U __stack_chk_fail     /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:281
+         U __stack_chk_guard    /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:281
+00000000 T __xlog_buf_printf    /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/system/core/include/cutils/xlog.h:135
+         U abort        /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:278
+00000000 T ale_log_output       /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/system/core/include/cutils/alelog.h:32
+00000000 T ale_log_output_binary        /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/system/core/include/cutils/alelog.h:30
+         U memcpy       /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:159
+         U strcmp       /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:77
+         U strlen       /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:271
+         U strncmp      /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:75
+         U vsnprintf    /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:264
+         U write_to_log /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:62
+         U xlogf_native_xtag_is_on      /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:255
