@@ -36,3 +36,22 @@ xlog-ale.o:
          U vsnprintf    /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:264
          U write_to_log /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:62
          U xlogf_native_xtag_is_on      /alps/mprelease/MPload/ALPS.ICS2.MP.V1.26_SUNMONTECH17_ICS2/source/alps/mediatek/protect/source/external/xlog/libxlog/xlog-ale.c:255
+         
+         
+         
+         
+        
+
+
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := libUMP
+LOCAL_SRC_FILES := libUMP.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := STATIC_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+
+PRODUCT_PACKAGES += \
+     libUMP \
