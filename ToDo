@@ -6,6 +6,10 @@
 https://github.com/joaquimorg/mt6577_FULL_AOSP_SOURCE/blob/master/system/core/include/cutils/xlog.h
 
 
+--------------------------------
+dump the dynamic section of an ELF library
+arm-eabi-readelf -d <libfoo.so>
+
 --------------------------------------------------------------------------------------------------------------------
 debug info :
 
