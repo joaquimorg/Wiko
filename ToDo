@@ -10,6 +10,8 @@ https://github.com/joaquimorg/mt6577_FULL_AOSP_SOURCE/blob/master/system/core/in
 dump the dynamic section of an ELF library
 arm-eabi-readelf -d <libfoo.so>
 
+http://forum.xda-developers.com/showthread.php?t=1476797
+
 --------------------------------------------------------------------------------------------------------------------
 debug info :
 
