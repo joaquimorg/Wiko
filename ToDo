@@ -12,6 +12,8 @@ arm-eabi-readelf -d <libfoo.so>
 
 http://forum.xda-developers.com/showthread.php?t=1476797
 
+grep -rnw 'directory' -e "pattern"
+
 --------------------------------------------------------------------------------------------------------------------
 debug info :
 
