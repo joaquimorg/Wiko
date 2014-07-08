@@ -12,7 +12,7 @@ arm-eabi-readelf -d <libfoo.so>
 
 http://forum.xda-developers.com/showthread.php?t=1476797
 
-grep -rnw 'directory' -e "pattern"
+grep -rnw ../cm-10.1/out/target/product/darkmoon/system/bin -e "libacdk.so"
 
 --------------------------------------------------------------------------------------------------------------------
 debug info :
